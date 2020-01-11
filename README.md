@@ -39,7 +39,7 @@ Given the following form inputs.
 
 | Author | Writer   | Quote | Action | Message           |
 | ------ | -------- | ----- | ------ | ----------------- |
-| Ibrah  | John Doe | Hello | submit | Quote Added       |
+| Eve  | John Doe | Hello | submit | Quote Added       |
 | \_     | \_       | \_    | submit | Enter all details |
 
 ## Technologies Used
@@ -54,13 +54,13 @@ Given the following form inputs.
 
 ## Contact Information
 
-- Email -ibrahmaina7@gmail.com
-- Phone number- +254707851734
+- Email -Wambuilucy@gmail.com
+- Phone number- +2547021105540
 
 ## Contribution
 
-1. In case of any issues drop it at https://github.com/ibrahnerd7/QutoesApp/issues
-2. Ideas and Contributions are to be pushed by creating a pull request at https://github.com/ibrahnerd7/QutoesApp/pulls
+1. In case of any issues drop it at https://github.com/Wambuilucy/QutoesApp/issues
+2. Ideas and Contributions are to be pushed by creating a pull request at https://github.com/wambuilucy/QutoesApp/pulls
 
 ## Development server
 
@@ -87,7 +87,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 MIT License
 
-Copyright (c) 2019 ibrahnerd7
+Copyright (c) 2019 wambuilucy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -107,7 +107,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright (c) 2019 **Ibrah**
+Copyright (c) 2019 **wambuilucy**
 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
