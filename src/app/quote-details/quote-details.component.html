@@ -23,7 +23,7 @@
             </div>  
             
             <div *ngIf="quote.isDescriptionShown">
-              <app-quote-details [quote]="quote" [quotes]='quotes' (isHighlighted)='highlightThis($event)'></app-quote-details>
+              <!-- <app-quote-details [quote]="quote" [quotes]='quotes' (isHighlighted)='highlightThis($event)'></app-quote-details> -->
             </div>
             <span
               ><i class="fa fa-circle-o text-success mt-3 mr-2"></i>{{quote.dateCreated | dateCount}}
