@@ -7,22 +7,21 @@ import { TagLineComponent } from './tag-line/tag-line.component';
 
 import { FormsModule } from '@angular/forms';
 import { QuoteDisplayComponent } from './quote-display/quote-display.component';
-// import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-// import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TagLineComponent,
     QuoteDisplayComponent,
-   
     DateCountPipe,
     HighlightDirective,
-    QuoteFormComponent
+    QuoteFormComponent,
+    QuoteDetailsComponent
   ],
   imports: [
     BrowserModule,
