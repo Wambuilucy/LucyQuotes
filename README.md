@@ -24,6 +24,10 @@ The website offers the user a form to inpu the quote author, their name and the 
 
 Behavior Driven Development is a way of constructing both non-functional and functional requirements. These requirements are directly converted into code and boosts testing.
 
+## Codebeat
+
+[![codebeat badge](https://codebeat.co/badges/457009ad-6024-4cc6-8c6e-a411df5d77ca)](https://codebeat.co/projects/github-com-wambuilucy-lucyquotes-master)
+
 ##### Features
 
 As a User I want to
