@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Quote } from '../quote';
 
 
@@ -7,7 +7,8 @@ import { Quote } from '../quote';
   templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
-export class QuoteDetailComponent implements OnInit {
+export class QuoteDetailsComponent implements OnInit {
+
   quotes: Quote[] = [
     new Quote('John', 'All that we are is the result of what we have thought. ', 'Buddha', new Date(2016, 10, 27)),
     new Quote('Pius', 'I have no special talent. I am only passionately curious. ', 'Albert Einstein', new Date())
