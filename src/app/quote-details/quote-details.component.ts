@@ -14,7 +14,7 @@ export class QuoteDetailsComponent implements OnInit {
     new Quote('John', 'All that we are is the result of what we have thought. ', 'Buddha', new Date(2016, 10, 27)),
     new Quote('Pius', 'I have no special talent. I am only passionately curious. ', 'Albert Einstein', new Date())
   ];
-  
+
   constructor() { }
   num1: number;
   num2: number;
@@ -27,6 +27,7 @@ export class QuoteDetailsComponent implements OnInit {
   toggleDescription(index) {
     this.quotes[index].isDescriptionShown = !this.quotes[index].isDescriptionShown;
   }
+  //Delete quote function
   
   deleteQuote(index) {
     confirm('Do you want to delete this quote ?') ? this.quotes.splice(index, 1) : console.log('Not deleted');
