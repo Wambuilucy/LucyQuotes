@@ -1,24 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-// import { Quote } from '../quote';
-
-// @Component({
-  // selector: 'app-quote-details',
-  // templateUrl: './quote-details.component.html',
-  // styleUrls: ['./quote-details.component.css']
-// })
-// export class QuoteDetailsComponent implements OnInit {
-  // quote: Quote[] = [
-    // new Quote('Wendy Munyasi', 'You only live once', 'Lucy Wambui', new Date(1956, 3, 11)),
-    // new Quote('Vivian Page', 'An apple a day keeps the doctor away ', Benard', new Date(2000, 4, 30)),
-
-  // ];
-
-  // constructor() { }
-
-  // ngOnInit() {
-  // }
-
-// }
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
 
@@ -28,7 +7,7 @@ import { Quote } from '../quote';
   templateUrl: './quote-details.component.html',
   styleUrls: ['./quote-details.component.css']
 })
-export class QuoteDisplayComponent implements OnInit {
+export class QuoteDetailComponent implements OnInit {
   quotes: Quote[] = [
     new Quote('John', 'All that we are is the result of what we have thought. ', 'Buddha', new Date(2016, 10, 27)),
     new Quote('Pius', 'I have no special talent. I am only passionately curious. ', 'Albert Einstein', new Date())
