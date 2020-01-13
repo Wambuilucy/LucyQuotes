@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4">
+      <app-quote-form (quoteEvent)="uploadQuote($event)"></app-quote-form>
+    </div>
+    <div  class="col-lg-8">
+      <div *ngFor="let quote of quotes; let i = index">
+        <div   class="card  mt-2">
+          <div  class="card-body">
+            <div appHighlight *ngIf='checkHighVote()==quote.upVotes && quote.upVotes!=0'>
+             <blockquote >
+             &quot; {{ quote.quoteText }}   &quot;
+              <br />
+              <small class="text-muted ml-2">- {{ quote.createdBy }} </small>
+            </blockquote>
+            </div>  
+            <div *ngIf='checkHighVote()!=quote.upVotes || quote.upVotes===0'>
+                    <blockquote >
+              &quot;  {{ quote.quoteText }}   &quot;
+              <br />
+              <small class="text-muted ml-2">- {{ quote.createdBy }} </small>
+            </blockquote>
+            </div>  
+            
+            <div *ngIf="quote.isDescriptionShown">
+              <app-quote-details [quote]="quote" [quotes]='quotes' (isHighlighted)='highlightThis($event)'></app-quote-details>
+            </div>
+            <span
+              ><i class="fa fa-circle-o text-success mt-3 mr-2"></i>{{quote.dateCreated | dateCount}}
+              ago</span
+            >
+            <button
+              class="btn btn-success"
+              style="float:right"
+              (click)="toggleDescription(i)"
+            >
+              {{
+                quote.isDescriptionShown
+                  ? "Hide Description"
+                  : "Show Description"
+              }}
+              <span class="ml-2">
+                <i class="fa fa-external-link" style="color:#fff"></i
+              ></span>
+            </button>
+<hr>
+            <span> <i class="fa fa-arrow-down  vote-icon" (click)='addDownVote(i)' ></i>{{quote.downVotes}}</span>
+           <span class="ml-4"> <i class="fa fa-arrow-up vote-icon" (click)=' addUpVote(i) '></i>{{quote.upVotes}}  </span>
+
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-danger" (click)='deleteQuote(i)'>
+              <span><i class="fa fa-trash mr-2" style="color:#fff"></i></span 
+              >Delete Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

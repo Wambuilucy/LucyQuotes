@@ -1,0 +1,22 @@
+<div class="col-lg-12">
+  <h4 class="text-white ">Add your Quote here</h4>
+  <form #quoteForm="ngForm" (ngSubmit)="addQuote()">
+    <div class="form-group">
+      <label for="author" class="text-white">Author</label>
+      <input type="text" class="form-control" id="author" name="author" placeholder="Enter the quote author ..."
+        #author="ngModel" required [(ngModel)]="quoteToAdd.authorName" />
+      Typing:{{ quoteToAdd.authorName }}
+    </div>
+    <div class="form-group">
+      <label for="author" class="text-white">Quote</label>
+      <textarea cols="4" type="text" class="form-control" id="quote" name="quote" placeholder="Enter the quote here ..."
+        [(ngModel)]="quoteToAdd.quoteText"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="your-name" class="text-white">Created By</label>
+      <input type="text" class="form-control" id="your-name" name="your-name" placeholder="Enter your name here ..."
+        [(ngModel)]="quoteToAdd.createdBy" />
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
